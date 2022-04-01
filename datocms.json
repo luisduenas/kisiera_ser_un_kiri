@@ -1,0 +1,11 @@
+{
+  "name": "kisiera_ser_un_kiri",
+  "description": "Información sobre los cuidados de nuestros gatos.",
+  "previewImage": "https://www.datocms-assets.com/65950/1648781718-photo_2022-03-31_19-51-13.jpg",
+  "datocmsProjectId": "23796",
+  "deploymentType": "static",
+  "buildCommand": "npm run build",
+  "buildDirectory": "public",
+  "datocmsApiTokenEnvName": "DATO_API_TOKEN",
+  "livePreviewUrl": "https://kisieraserunkiri.com/"
+}
