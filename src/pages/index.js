@@ -12,8 +12,8 @@ export default function Index({ data: { allPosts, site, blog } }) {
 
   return (
     <Container>
-      <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
       <Intro />
+      <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -48,8 +48,8 @@ export const query = graphql`
         excerpt
         date
         coverImage {
-          large: gatsbyImageData(width: 1500)
-          small: gatsbyImageData(width: 760)
+          large: gatsbyImageData(width: 400)
+          small: gatsbyImageData(width: 240)
         }
         author {
           name
