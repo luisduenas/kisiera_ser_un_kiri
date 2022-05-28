@@ -1,7 +1,4 @@
 import React from "react";
-import Avatar from "../components/avatar";
-import Date from "../components/date";
-import { Link } from "gatsby";
 import PhotoCard from "./photo-card";
 
 export default function HeroPost({

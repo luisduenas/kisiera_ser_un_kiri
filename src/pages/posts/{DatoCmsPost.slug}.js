@@ -20,7 +20,7 @@ export default function Post({ data: { site, post, morePosts } }) {
           date={post.date}
           author={post.author}
         />
-        <PostBody content={post.content} />
+        <PostBody content={post.bodyNode.childMarkdownRemark.html} />
       </article>
       <SectionSeparator />
       {morePosts.nodes.length > 0 && <MoreStories posts={morePosts.nodes} />}
@@ -49,6 +49,12 @@ export const query = graphql`
           image {
             gatsbyImageData(width: 700)
           }
+        }
+      }
+      bodyNode {
+        childMarkdownRemark {
+          excerpt
+          html
         }
       }
       date

@@ -1,8 +1,8 @@
-const dotenv = require("dotenv")
+const dotenv = require("dotenv");
 
 dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -21,5 +21,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
   ],
 };
