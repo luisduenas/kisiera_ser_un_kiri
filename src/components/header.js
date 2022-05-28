@@ -11,6 +11,7 @@ export default function Header() {
           placeholder="tracedSVG"
           alt="Logo"
           width={200}
+          backgroundColor="white"
         />
       </Link>
     </h2>
