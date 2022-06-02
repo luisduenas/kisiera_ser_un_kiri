@@ -41,16 +41,6 @@ export const query = graphql`
       }
       title
       slug
-      content {
-        value
-        blocks {
-          __typename
-          id: originalId
-          image {
-            gatsbyImageData(width: 700)
-          }
-        }
-      }
       bodyNode {
         childMarkdownRemark {
           excerpt
