@@ -13,15 +13,13 @@
 
 [context.ciam.environment]
   PREFIX_PATHS = "true"
+  GATSBY_OKTA_SESSION_URL="https://ciam.oktatest.com/oktaapi/myokta/session"
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
-
-[context.ciam.environment]
-  GATSBY_OKTA_SESSION_URL="https://ciam.oktatest.com/oktaapi/myokta/session"
 
 [context.production.environment]
   GATSBY_OKTA_SESSION_URL="https://www.okta.com/oktaapi/myokta/session"
