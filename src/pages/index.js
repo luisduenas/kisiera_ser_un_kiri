@@ -10,6 +10,8 @@ export default function Index({ data: { allPosts, site, blog } }) {
   const heroPost = allPosts.nodes[0];
   const morePosts = allPosts.nodes.slice(1);
 
+  console.log(process.env.GATSBY_OKTA_SESSION_URL)
+
   return (
     <Container>
       <Intro />
