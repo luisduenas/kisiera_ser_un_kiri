@@ -20,7 +20,7 @@
 [[plugins]]
   package = "@netlify/plugin-gatsby"
 
-[context.ciam]
+[context.ciam.environment]
   GATSBY_OKTA_SESSION_URL="https://ciam.oktatest.com/oktaapi/myokta/session"
 
 [context.production.environment]
